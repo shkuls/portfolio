@@ -5,6 +5,8 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import waveTrans from "./assets/stacked-waves-haikei (1).svg"
 import peakTrans from "./assets/stacked-peaks-haikei (1).svg"
+import waveTrans2 from "./assets/stacked-waves-haikei (2).svg"
+import Footer from './pages/Footer'
 
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
       <Skills/>
       <img src={peakTrans} className='w-full'/>
       <Projects/>
+      <img src={waveTrans2} className='w-full'/>
+      
       <About/>
+      <Footer/>
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 const items : Array<{
     title : string ;
@@ -25,10 +24,10 @@ const items : Array<{
 
 export default function Topbar() {
   return (
-    <div className=" h-20 flex justify-evenly   backdrop-blur-sm sticky top-0">
+    <div className=" h-20 flex justify-evenly  backdrop-blur-xl sticky top-0 font-poppins ">
 
         {items.map((item , index)=>
-            <a key={index} href={item.link} className="text-[#ffffff] m-auto text-2xl font-bold">{item.title}</a>
+            <a key={index} href={item.link} className="text-[#ffffff] m-auto text-2xl font-bold hover:text-blue-600 tracking-widest hover:text-4xl transition-all">{item.title}</a>
         )}
       
     </div>

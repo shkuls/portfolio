@@ -1,4 +1,4 @@
-import css from './css3.svg'
+
 
 type Skill = {
     title : string ; 

@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import Topbar from "../components/Topbar"
 import Spline from '@splinetool/react-spline';
 export default function Intro() {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    } , [])
   return (<>
 
     <Topbar/>
@@ -18,7 +22,9 @@ export default function Intro() {
 
 
         </div>
-      <Spline className="" scene="https://prod.spline.design/DCNLvIodaiM-1hq9/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/DCNLvIodaiM-1hq9/scene.splinecode" />
+
+
     </div>
 
   

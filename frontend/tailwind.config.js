@@ -6,9 +6,16 @@ export default {
 ],
   theme: {
     extend: {
+      fontFamily :{
+        'poppins' : ['Poppins' , 'sans-serif'],
+        'microgramma' : ['Microgramma' , 'sans-serif'],
+        
+      }
+      ,
       boxShadow : {
         'skillBox' : '19px 19px 38px #006bb8, -19px -19px 38px #00bfff;'
-      }
+      },
+      
     },
     fontFamily: {
       'nunito': ['nunito', 'sans-serif'],
