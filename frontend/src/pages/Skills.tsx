@@ -14,7 +14,7 @@ export default function Skills() {
 
         return(
       
-      <SkillCards title={skill.title} img={skill.img}/>
+      <SkillCards key={index} title={skill.title} img={skill.img}/>
         )
 
         }
