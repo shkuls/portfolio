@@ -12,7 +12,7 @@ export default function Intro() {
   <>
 
     <Topbar/>
-    <div className="bg-[##FF4A53] flex flex-col sm:flex-row pl-10" id="home">
+    <div className="bg-[#FF4A53] flex flex-col sm:flex-row pl-10" id="home">
         <div className="m-auto min-w-80 w-[100vw] flex-col ml-10 font-poppins tracking-wider">
             <p className="font-semibold text-2xl mb-">
                 Hi there!
