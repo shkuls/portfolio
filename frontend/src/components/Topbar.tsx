@@ -26,7 +26,7 @@ const items : Array<{
 ]
 
 export default function Topbar() {
-    const [open  , setOpen] = useState(false)
+    const [open  , setOpen] = useState(true)
   return (<>
     <div className=" mb-10 h-20 justify-around backdrop-blur-xl sticky top-0 font-poppins z-10 sm:flex hidden">
 
