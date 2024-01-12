@@ -1,7 +1,6 @@
-import SkillCards from "../components/SkillCards.tsx" 
+import SkillCards from "../SkillCards"
 
-import { SkillsArray } from "../assets/skillArray"
-import React from "react"
+import { SkillsArray } from "../../assets/skillArray"
 
 export default function Skills() {
   return (

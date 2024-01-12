@@ -37,7 +37,7 @@ export default function About() {
      <div className="flex justify-around pt-10 ">
         {
           contact.map((cont , index)=>
-          <ContactCard {...cont}/>
+          <ContactCard key={index} {...cont}/>
           )
         }
 
