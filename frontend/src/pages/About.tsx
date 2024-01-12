@@ -1,22 +1,45 @@
-import myPhotoBW from "../assets/IMG_1397 Background Removed (1).png"
-// import photoColor from "../assets/IMG_1397 colour Background Removed (1).png"
+import Instagram from "../assets/instagram.svg"
+import Linkedin from "../assets/linkedin.svg"
+import email from "../assets/envelope-regular.svg"
+import github from "../assets/github.svg"
+import ContactCard from "../components/ContactCard"
+
+const contact : Array<{
+  'logo' : string ;
+  'link' : string;
+  'title' : string ;
+}> = [
+  {
+    'logo': email,
+    'link' : "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrhTcJLZstBcnmCscSHRdDtHgVRZVcskgcxLRxzBltXTMhjBjQbDWMSNwbqsZKtkpRxjqV" , 
+    'title' : "Email",
+  },
+  {
+    'logo': github,
+    'link' : "https://github.com/shkuls" , 
+    'title' : "Github",
+  },
+  {
+    'logo': Linkedin,
+    'link' : "https://www.linkedin.com/in/shlok-kulshreshtha-155981270/" , 
+    'title' : "Linkedin",
+  },
+  {
+    'logo': Instagram,
+    'link' : "https://www.instagram.com/shlok.kulsh/" , 
+    'title' : "Instagram",
+  },
+]
+
 export default function About() {
   return (
-    <div id="about" className="bg-[#FCAF3C]">
-     <h1 className="m-auto font-poppins w-80 font-bold text-5xl text-center p-10">About Me</h1>
-     <div className="flex">
-        <img
-        
-        src={myPhotoBW} 
-        className="h-96 scale-125 ml-7 mb-12 "/>
-        {/* <img
-        
-        src={photoColor} 
-        className="h-96 scale-125 ml-7 mb-12 hidden hover:visible"/> */}
-        <p className="m-auto font-poppins font-semibold w-1/2 text-xl">
-            I am Shlok Kulshreshtha , a sophomore at IIT Roorkee.
-            I'm really enthusiastic about the field of technology and am deeply intrested in Software Development , Web Automation , Artificial Intelligence and anything else that involves code.
-        </p>
+    <div id="contact" className="bg-[#8860D0] h-56">
+     <div className="flex justify-around pt-10 ">
+        {
+          contact.map((cont , index)=>
+          <ContactCard {...cont}/>
+          )
+        }
 
      </div>
     </div>

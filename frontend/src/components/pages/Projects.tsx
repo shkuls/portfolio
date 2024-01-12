@@ -1,6 +1,8 @@
 import ProjectCard from "../components/ProjectCard.tsx"
 import { ProjectArray } from "../assets/Projects/ProjectArray.js"
 
+import React from "react"
+
 
 export default function Projects() {
   return (

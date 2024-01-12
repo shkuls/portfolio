@@ -18,9 +18,9 @@ export default function ProjectCard(prop : Project) {
   };
     
   return (
-    <div className="m-10 ">
+    <div className="m-10 font-poppins">
         <motion.div
-      className={`card `}
+      className={`card`}
       layout
       onClick={() => {
         setIsExpaned(!isExpaned);
@@ -32,6 +32,15 @@ export default function ProjectCard(prop : Project) {
       <motion.p layout="position">
       {prop.shortDesc}
       </motion.p>
+
+        
+              <motion.p layout="position" style={{fontWeight : "500" , color : "gray" , visibility: isExpaned?"hidden":"visible"}}>
+      Click to know more!
+      </motion.p>
+          
+
+
+       
 
       {isExpaned && (
         <>

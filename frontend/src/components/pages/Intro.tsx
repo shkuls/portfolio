@@ -1,6 +1,6 @@
 import myPhotoBW from "../assets/IMG_1397 Background Removed (1).png"
 import { useEffect } from "react";
-import Topbar from "../components/Topbar"
+import Topbar from "../Topbar";
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Intro() {

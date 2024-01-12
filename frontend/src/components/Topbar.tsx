@@ -16,18 +16,18 @@ const items : Array<{
         link : '#projects'
     },
     {
-        title : "About" , 
-        link : '#about'
+        title : "Contact" , 
+        link : '#contact'
     },
     
 ]
 
 export default function Topbar() {
   return (
-    <div className=" h-20 flex justify-evenly  backdrop-blur-xl sticky top-0 font-poppins ">
+    <div className=" mb-10 h-20 flex justify-around backdrop-blur-xl sticky top-0 font-poppins z-10">
 
         {items.map((item , index)=>
-            <a key={index} href={item.link} className="text-[#ffffff] m-auto text-2xl font-bold hover:text-blue-600 tracking-widest hover:text-4xl transition-all">{item.title}</a>
+            <a key={index} href={item.link} className=" text-[#010101] m-auto text-2xl text-center font-bold hover: tracking-widest hover:text-3xl  transition-all">{item.title}</a>
         )}
       
     </div>
