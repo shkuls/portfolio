@@ -41,5 +41,8 @@ export const SkillsArray:Array<Skill> = [
     {
         title : "Tailwind"
     },
+    {
+        title : "SQL"
+    },
     
 ]

@@ -33,8 +33,8 @@ const contact : Array<{
 
 export default function About() {
   return (
-    <div id="contact" className="bg-[#8860D0] h-56">
-     <div className="flex justify-around pt-10 ">
+    <div id="contact" className="bg-[#8860D0] h-72 sm:h-80">
+     <div className="grid grid-cols-2">
         {
           contact.map((cont , index)=>
           <ContactCard key={index} {...cont}/>

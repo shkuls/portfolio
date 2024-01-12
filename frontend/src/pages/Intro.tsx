@@ -13,7 +13,7 @@ export default function Intro() {
 
     <Topbar/>
     <div className="bg-[#5580E9] flex flex-col sm:flex-row pl-10" id="home">
-        <div className="m-auto min-w-80 w-[100vw] flex-col ml-10 font-poppins tracking-wider">
+        <div className="m-auto sm:{min-w-80 w-[100vw]} flex-col sm:ml-10 font-poppins tracking-wider ">
             <p className="font-semibold text-2xl mb-">
                 Hi there!
             </p>
@@ -27,7 +27,7 @@ export default function Intro() {
                 ]}
                 speed={50}
                 repeat={Infinity}
-                style={{ fontSize: '50px' , fontWeight : '900' , fontFamily : 'Poppins'}}
+                style={{ fontSize: '40px' , fontWeight : '900' , fontFamily : 'Poppins'}}
             />
             
             
@@ -37,8 +37,8 @@ export default function Intro() {
             <p className="text-3xl w-5/6">
                 I make applications for the web.
             </p>
-            <p className="text-xl w-4/6 mt-10 ">
-            I am Shlok Kulshreshtha , a sophomore at IIT Roorkee. I'm really enthusiastic about the field of technology and am deeply intrested in Software Development , Web Automation , Artificial Intelligence and anything else that involves code.
+            <p className="sm:{text-xl w-4/6 mt-10} ">
+            I am Shlok Kulshreshtha , a sophomore at IIT Roorkee. I'm really enthusiastic about the field of technology and am deeply interested in Software Development , Web Automation , Artificial Intelligence and anything else that involves code.
             </p>
 
 
@@ -46,7 +46,7 @@ export default function Intro() {
         <img
         
         src={myPhotoBW} 
-        className="h-80 scale-125  z-0"/>
+        className="h-96 z-0"/>
 
 
     </div>
